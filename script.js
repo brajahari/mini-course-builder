@@ -29,3 +29,33 @@ function updateProgress() {
 window.addEventListener('scroll', updateProgress, { passive: true });
 window.addEventListener('resize', updateProgress);
 updateProgress();
+
+// Check-in questions
+document.querySelectorAll('.checkin').forEach((box) => {
+  const button = box.querySelector('.checkin-btn');
+  const feedback = box.querySelector('.checkin-feedback');
+  const explain = box.querySelector('.checkin-explain');
+  const next = box.querySelector('.checkin-next');
+  const inputs = box.querySelectorAll('input[type="radio"]');
+
+  button.addEventListener('click', () => {
+    const chosen = box.querySelector('input:checked');
+    if (!chosen) {
+      feedback.textContent = 'Pick an answer first.';
+      return;
+    }
+    const correct = box.querySelector('input[data-correct]');
+    const right = chosen === correct;
+
+    correct.closest('label').classList.add('is-correct');
+    if (!right) chosen.closest('label').classList.add('is-wrong');
+    feedback.textContent = right
+      ? 'Correct! Well done.'
+      : 'Not quite. The right answer is marked above.';
+    explain.hidden = false;
+    next.hidden = false;
+    box.classList.add('is-answered');
+    inputs.forEach((i) => { i.disabled = true; });
+    button.disabled = true;
+  });
+});

@@ -15,7 +15,7 @@
   </script>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
   <div class="progress" aria-hidden="true"><div class="progress-bar" id="progress-bar"></div></div>
 
   <header class="site-header">
@@ -59,6 +59,20 @@
         <dt>Careers</dt>
         <dd>Knowing these materials helps prepare you for work in advanced electronics, microelectronics and the semiconductor industry. It also shows where device technology and sustainability are heading.</dd>
       </dl>
+
+      <section class="checkin" aria-label="Check-in question">
+        <p class="checkin-tag">Check-in</p>
+        <fieldset>
+          <legend>What are &quot;emerging electronic devices and materials&quot;?</legend>
+          <label><input type="radio" name="q-introduction" value="0"> <span>Older silicon chips made smaller</span></label>
+          <label><input type="radio" name="q-introduction" value="1" data-correct> <span>New materials and devices that go beyond what silicon can do</span></label>
+          <label><input type="radio" name="q-introduction" value="2"> <span>Software that runs on silicon</span></label>
+        </fieldset>
+        <button type="button" class="checkin-btn">Check answer</button>
+        <p class="checkin-feedback" role="status"></p>
+        <p class="checkin-explain" hidden>They are new materials and devices that may be faster, use less energy, bend, or do jobs silicon cannot.</p>
+        <a class="checkin-next" href="#computing" hidden>Continue to: Advanced computing: quantum and neuromorphic devices &rarr;</a>
+      </section>
 
       <h2 id="computing">Advanced computing: quantum and neuromorphic devices</h2>
 
@@ -113,6 +127,20 @@
         </table>
       </div>
 
+      <section class="checkin" aria-label="Check-in question">
+        <p class="checkin-tag">Check-in</p>
+        <fieldset>
+          <legend>How is a qubit different from a normal bit?</legend>
+          <label><input type="radio" name="q-computing" value="0"> <span>It can only ever be 0</span></label>
+          <label><input type="radio" name="q-computing" value="1"> <span>It stores more electricity</span></label>
+          <label><input type="radio" name="q-computing" value="2" data-correct> <span>It can be 0, 1, or both at once</span></label>
+        </fieldset>
+        <button type="button" class="checkin-btn">Check answer</button>
+        <p class="checkin-feedback" role="status"></p>
+        <p class="checkin-explain" hidden>A normal bit is 0 or 1. A qubit can also be in superposition: 0 and 1 at the same time.</p>
+        <a class="checkin-next" href="#flexible" hidden>Continue to: Flexible and bio-compatible electronics &rarr;</a>
+      </section>
+
       <h2 id="flexible">Flexible and bio-compatible electronics</h2>
       <p>Silicon devices are <strong>rigid and brittle</strong>, which limits their use in wearables, foldable screens and bendable sensors. Flexible and organic electronics use <strong>conducting polymers</strong> (plastics that carry electricity), organic semiconductors and thin-film materials. Devices made from them can bend, stretch, or be printed onto flexible surfaces.</p>
 
@@ -156,6 +184,20 @@
         </table>
       </div>
       <p><strong>Why it matters.</strong> These devices fit into daily life. Printable, flexible devices can use less material and less energy to make, which supports sustainability. They also open new markets: wearable healthcare devices, portable solar cells and foldable consumer electronics.</p>
+
+      <section class="checkin" aria-label="Check-in question">
+        <p class="checkin-tag">Check-in</p>
+        <fieldset>
+          <legend>Why can organic electronics be printed on bendable surfaces?</legend>
+          <label><input type="radio" name="q-flexible" value="0"> <span>They are made from thick silicon plates</span></label>
+          <label><input type="radio" name="q-flexible" value="1" data-correct> <span>They use carbon-based materials that can be processed at low temperatures</span></label>
+          <label><input type="radio" name="q-flexible" value="2"> <span>They only work when folded</span></label>
+        </fieldset>
+        <button type="button" class="checkin-btn">Check answer</button>
+        <p class="checkin-feedback" role="status"></p>
+        <p class="checkin-explain" hidden>Organic semiconductors are carbon-based and can be made at low temperatures, so they can be printed on plastic, film or paper.</p>
+        <a class="checkin-next" href="#spin-2d" hidden>Continue to: Spintronics and 2D materials &rarr;</a>
+      </section>
 
       <h2 id="spin-2d">Quantum-scale and spin-based materials: spintronics and 2D</h2>
       <p>Traditional electronics store and process information using the <strong>charge</strong> of electrons. <strong>Spintronics</strong> also uses the electron's <strong>spin</strong>. <strong>2D materials</strong>, such as graphene and MoS₂, are ultra-thin layers only a few atoms thick. They conduct well, bend, and use little energy. Together, they can make devices that are faster, smaller and more energy efficient.</p>
@@ -227,6 +269,20 @@
       </div>
       <p><strong>Why it matters.</strong> Spintronics and 2D materials allow smaller, faster, more energy-efficient devices that draw less power. Ultra-thin, flexible 2D materials can use less material and support greener manufacturing. They matter for next-generation computing, wearables and green technology.</p>
 
+      <section class="checkin" aria-label="Check-in question">
+        <p class="checkin-tag">Check-in</p>
+        <fieldset>
+          <legend>What does &quot;non-volatile&quot; memory, like MRAM, mean?</legend>
+          <label><input type="radio" name="q-spin-2d" value="0"> <span>It loses its data when switched off</span></label>
+          <label><input type="radio" name="q-spin-2d" value="1"> <span>It only works at very high speed</span></label>
+          <label><input type="radio" name="q-spin-2d" value="2" data-correct> <span>It keeps its data even when the power is off</span></label>
+        </fieldset>
+        <button type="button" class="checkin-btn">Check answer</button>
+        <p class="checkin-feedback" role="status"></p>
+        <p class="checkin-explain" hidden>Spin-based memory holds information without power, which also reduces wasted energy.</p>
+        <a class="checkin-next" href="#ai" hidden>Continue to: AI and semiconductors &rarr;</a>
+      </section>
+
       <h2 id="ai">AI and semiconductors</h2>
       <p>Artificial intelligence (AI) and chips help each other. AI programs need chips that are faster and use less energy. And AI is used to improve how chips are designed, made and tested. This loop speeds up innovation and drives specialized devices that go beyond traditional silicon.</p>
 
@@ -267,6 +323,20 @@
         <li><strong>Greener wearables:</strong> AI-compatible flexible electronics support low-resource, wearable and environmentally friendly uses.</li>
       </ul>
 
+      <section class="checkin" aria-label="Check-in question">
+        <p class="checkin-tag">Check-in</p>
+        <fieldset>
+          <legend>What is the main benefit of edge AI?</legend>
+          <label><input type="radio" name="q-ai" value="0"> <span>It needs a bigger data center</span></label>
+          <label><input type="radio" name="q-ai" value="1"> <span>It only works while online</span></label>
+          <label><input type="radio" name="q-ai" value="2" data-correct> <span>The AI runs on the device itself, so it responds faster, protects privacy and sends less data to the cloud</span></label>
+        </fieldset>
+        <button type="button" class="checkin-btn">Check answer</button>
+        <p class="checkin-feedback" role="status"></p>
+        <p class="checkin-explain" hidden>Processing on the device itself means less data travels to the cloud, so responses are faster and more private.</p>
+        <a class="checkin-next" href="#summary" hidden>Continue to: Summary &rarr;</a>
+      </section>
+
       <h2 id="summary">Summary</h2>
       <ul>
         <li>Traditional silicon devices are powerful but limited in speed, flexibility and energy efficiency.</li>
@@ -297,6 +367,25 @@
           </tbody>
         </table>
       </div>
+      <section class="checkin" aria-label="Check-in question">
+        <p class="checkin-tag">Check-in</p>
+        <fieldset>
+          <legend>Which technology uses an electron&#x27;s spin as well as its charge?</legend>
+          <label><input type="radio" name="q-summary" value="0"> <span>Flexible electronics</span></label>
+          <label><input type="radio" name="q-summary" value="1"> <span>Neuromorphic devices</span></label>
+          <label><input type="radio" name="q-summary" value="2" data-correct> <span>Spintronics</span></label>
+        </fieldset>
+        <button type="button" class="checkin-btn">Check answer</button>
+        <p class="checkin-feedback" role="status"></p>
+        <p class="checkin-explain" hidden>Spintronics uses spin, the up or down property of electrons, in addition to their charge.</p>
+        <a class="checkin-next" href="#quiz" hidden>Continue to: Final quiz &rarr;</a>
+      </section>
+
+      <h2 id="quiz">Final quiz</h2>
+      <p>Test what you have learned with a quiz on Kahoot. It opens in a new tab.</p>
+      <p><a class="button-link" href="https://kahoot.it/challenge/06469607" target="_blank" rel="noopener">Take the quiz on Kahoot</a></p>
+      <p><a href="#top">Back to the top &uarr;</a></p>
+
     </article>
   </main>
 
