@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emerging Electronic Devices and Materials</title>
+  <meta name="description" content="A beginner-friendly mini-course on the new materials and devices that go beyond silicon.">
+  <script>
+    // Set the saved theme before the page paints. Light is the default.
+    try {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><div class="progress-bar" id="progress-bar"></div></div>
+
+  <header class="site-header">
+    <p class="site-name">E341 Electronic and Semiconductor Materials</p>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+      <span id="theme-toggle-label">Dark theme</span>
+    </button>
+  </header>
+
+  <main>
+    <article class="article">
+      <h1>Emerging Electronic Devices and Materials</h1>
+      <p class="lede">Unit 2 mini-course. No background needed: every technical word is explained as it appears.</p>
+
+      <figure>
+        <img src="images/course-overview.png" width="879" height="533" alt="Course roadmap with six steps: Introduction; Advanced Computational Devices (neuromorphic and quantum); Quantum-Scale and Spin-Based Materials (spintronics and 2D); Flexible and Bio-Compatible Materials (flexible and organic); Technologies and Industry Impact; and Summary.">
+        <figcaption>The roadmap for this course.</figcaption>
+      </figure>
+
+      <h2 id="introduction">Introduction: what "emerging" means</h2>
+      <p>Almost every electronic device you use today is built on <strong>silicon</strong>. Silicon is a <strong>semiconductor</strong>, a material that can be switched between carrying electricity and blocking it. That on/off switching is how chips think and remember.</p>
+      <p>"Emerging electronic devices and materials" are new materials and devices that go beyond what silicon can do. They may be faster, use less energy, bend, or do jobs silicon cannot do at all. Five examples come up in this course:</p>
+      <ul>
+        <li><strong>2D materials</strong> such as graphene and MoS₂, layers only a few atoms thick.</li>
+        <li><strong>Flexible and organic electronics</strong>, such as wearables and foldable screens.</li>
+        <li><strong>Neuromorphic devices</strong>, chips that work a bit like a brain.</li>
+        <li><strong>Quantum devices</strong>, which use the rules of quantum physics.</li>
+        <li><strong>Spintronic devices</strong>, such as MRAM memory and magnetic sensors, which use a property of electrons called spin.</li>
+      </ul>
+
+      <h3>Why explore new materials and devices?</h3>
+      <dl>
+        <dt>Silicon has limits</dt>
+        <dd>Silicon devices struggle with speed, power efficiency and shrinking further. As parts get smaller, they suffer from <strong>leakage currents</strong> (electricity escaping where it should not), heat, and reliability problems.</dd>
+        <dt>Saving energy</dt>
+        <dd>New materials and designs can cut energy use in mobile devices, data centers and renewable energy systems.</dd>
+        <dt>New uses</dt>
+        <dd>Flexible and wearable electronics need materials that bend or stretch. Quantum and neuromorphic devices make advanced computing and AI possible.</dd>
+        <dt>Future needs</dt>
+        <dd>Quantum computing, AI and smart sensors all need materials with unusual electrical or physical properties.</dd>
+        <dt>Careers</dt>
+        <dd>Knowing these materials helps prepare you for work in advanced electronics, microelectronics and the semiconductor industry. It also shows where device technology and sustainability are heading.</dd>
+      </dl>
+
+      <h2 id="computing">Advanced computing: quantum and neuromorphic devices</h2>
+
+      <h3>Quantum devices</h3>
+      <p>Quantum devices work using <strong>quantum mechanics</strong>, the physics of very small things, which behaves differently from everyday objects.</p>
+      <ul>
+        <li><strong>Qubit.</strong> A normal computer bit is either 0 or 1. A qubit can be 0, 1, or <em>both at once</em>. That "both at once" state is called <strong>superposition</strong>.</li>
+        <li><strong>Entanglement.</strong> Qubits can be linked so that what happens to one is tied to the other, even when they are far apart. This gives quantum computers special abilities.</li>
+        <li><strong>Uses.</strong> Cryptography (secret codes), optimization (finding the best solution among very many), and simulating materials.</li>
+      </ul>
+      <figure>
+        <img src="images/bit-vs-qubit.png" width="444" height="267" alt="Diagram comparing a bit with a qubit. A bit is shown as a ball with an arrow pointing down for 0 or up for 1. A qubit is shown as a ball with a tilted arrow, split between 0 and 1.">
+        <figcaption>A bit is 0 or 1. A qubit can be a mix of both.</figcaption>
+      </figure>
+      <p><strong>Where things stand:</strong> quantum devices are mostly still experimental. IBM and Google let people use quantum computers over the cloud. Qubits based on <strong>Majorana</strong> particles are still at the <em>proof-of-concept</em> stage, meaning researchers have shown the idea can work but it is not a finished product.</p>
+      <p>Microsoft has built a quantum processing unit (QPU) around a <strong>topological core</strong>, designed to scale to a million qubits on a single chip.</p>
+      <figure>
+        <img src="images/majorana-1-chip.png" width="447" height="637" alt="Photo of Microsoft's Majorana 1 quantum chip mounted in a gold and red circuit board. The chip is circled in blue.">
+        <figcaption>Microsoft's Majorana 1 quantum chip.</figcaption>
+      </figure>
+      <p class="watch">Watch: <a href="https://www.youtube.com/watch?v=JhHMJCUmq28" target="_blank" rel="noopener">Quantum Computers Explained – Limits of Human Technology</a> (YouTube)<br>
+      Watch: <a href="https://www.youtube.com/shorts/9kxcGmHJnCI" target="_blank" rel="noopener">Majorana 1: Microsoft's Quantum Computing Breakthrough!</a> (YouTube)<br>
+      Read: <a href="https://quantum.microsoft.com/en-us/solutions/microsoft-quantum-hardware" target="_blank" rel="noopener">Microsoft Quantum hardware</a></p>
+      <p><strong>Key materials.</strong> Mostly semiconductors, sometimes with <strong>superconductors</strong> (materials that carry electricity with no resistance) or <strong>topological materials</strong> (materials with special surface behavior). These help qubits keep their quantum state and stay entangled.</p>
+      <p><strong>Why it matters.</strong> Quantum computers could speed up optimization, cryptography and scientific simulation, and could cut energy use in large computing systems. For example, simulating materials could help design new medicines or semiconductors.</p>
+
+      <h3>Neuromorphic devices</h3>
+      <p>"Neuromorphic" means "brain-shaped". These devices copy how the human brain is built and works, using <strong>artificial neurons</strong> (the brain's nerve cells) and <strong>synapses</strong> (the connections between them).</p>
+      <ul>
+        <li>Devices such as <strong>memristors</strong> can store <em>and</em> process information in the same place, like a biological synapse. Ordinary computers keep memory and processing separate.</li>
+        <li><strong>Uses.</strong> AI chips, pattern recognition, smart sensors and energy-efficient computing.</li>
+      </ul>
+      <p><strong>Where things stand:</strong> commercial prototypes exist, such as Intel Loihi and IBM TrueNorth, for energy-efficient AI.</p>
+      <figure>
+        <img src="images/brain-to-neuromorphic.jpeg" width="775" height="542" alt="Diagram comparing the human brain with a neuromorphic device. The top row shows the brain, a network of neurons, and a synapse. The bottom row shows the matching artificial versions: a neural-network chip, an artificial neuron network with input, hidden and output layers, and an artificial synapse built from a semiconductor, electrolyte and electrodes.">
+        <figcaption>From the human brain (top) to a brain-inspired device (bottom).</figcaption>
+      </figure>
+      <p class="watch">Watch: <a href="https://www.youtube.com/watch?v=CPuaud9xi3U" target="_blank" rel="noopener">Intel Introduces Hala Point, the Most Advanced Neuromorphic System</a> (YouTube)</p>
+      <p><strong>Key materials.</strong> Mostly semiconductors such as silicon and GaAs (gallium arsenide), and sometimes <strong>oxides</strong> or <strong>phase-change materials</strong> (materials that switch between two physical states). These create brain-like, adaptive behavior.</p>
+      <p><strong>Why it matters.</strong> They allow energy-efficient AI "at the edge", meaning in the device itself, such as a smart camera or wearable. They can learn and adapt, so less work needs to be sent to distant computers. For example, they can recognize patterns in smart sensors and health monitors.</p>
+
+      <h3>How do they compare with traditional silicon?</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Comparison table: traditional silicon versus quantum and neuromorphic devices">
+        <table>
+          <thead><tr><th scope="col">Feature</th><th scope="col">Traditional silicon</th><th scope="col">Quantum / neuromorphic</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Information unit</th><td>Bit (0 or 1)</td><td>Qubit, or neuron/synapse</td></tr>
+            <tr><th scope="row">Power usage</th><td>Moderate</td><td>Very low (neuromorphic)</td></tr>
+            <tr><th scope="row">Uses</th><td>General computing</td><td>Specialized tasks: AI, quantum simulation</td></tr>
+            <tr><th scope="row">Flexibility</th><td>Rigid</td><td>Can include flexible or adaptive systems</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="flexible">Flexible and bio-compatible electronics</h2>
+      <p>Silicon devices are <strong>rigid and brittle</strong>, which limits their use in wearables, foldable screens and bendable sensors. Flexible and organic electronics use <strong>conducting polymers</strong> (plastics that carry electricity), organic semiconductors and thin-film materials. Devices made from them can bend, stretch, or be printed onto flexible surfaces.</p>
+
+      <h3>Key materials</h3>
+      <dl>
+        <dt>Organic semiconductors</dt>
+        <dd>Carbon-based materials that conduct electricity. They can be made at low temperatures and printed on flexible surfaces. Examples: OLED displays and organic solar cells.</dd>
+        <dt>Flexible substrates</dt>
+        <dd>A <strong>substrate</strong> is the base layer a device is built on. Here it can be plastic, polymer film or even paper, so electronics can follow curves or fit on the body.</dd>
+        <dt>2D materials for flexibility</dt>
+        <dd>Graphene or MoS₂ can be made into ultra-thin, strong, bendable layers that still conduct well and perform well.</dd>
+      </dl>
+      <figure>
+        <img src="images/organic-solar-cell.png" width="1063" height="333" alt="Diagram of a flexible organic solar cell built in layers: a flexible base, a transparent electrode, a transport layer, a light-absorbing polymer-fullerene layer, and a metal electrode. A close-up shows light striking the absorbing layer and freeing an electron and a hole.">
+        <figcaption>An organic solar cell is a stack of very thin layers on a flexible base.</figcaption>
+      </figure>
+
+      <h3>Applications</h3>
+      <ul>
+        <li><strong>Wearables:</strong> fitness trackers, smart watches, health monitors.</li>
+        <li><strong>Flexible displays:</strong> foldable smartphones, rollable TVs.</li>
+        <li><strong>Flexible solar cells:</strong> lightweight, portable energy.</li>
+        <li><strong>Flexible sensors:</strong> pressure, temperature or chemical sensors for medical or industrial use.</li>
+      </ul>
+      <figure>
+        <img src="images/foldable-phone.png" width="659" height="530" alt="A hand holding a foldable smartphone, bent partway open, with its screen showing a clock and apps.">
+        <figcaption>A foldable smartphone.</figcaption>
+      </figure>
+      <p><strong>Where things stand:</strong> many of these are already on sale, including wearables, foldable displays and flexible sensors. Flexible solar cells and advanced medical sensors are still emerging, with work continuing to improve how long they last.</p>
+
+      <h3>How do they compare with silicon?</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Comparison table: silicon versus flexible and organic electronics">
+        <table>
+          <thead><tr><th scope="col">Feature</th><th scope="col">Silicon</th><th scope="col">Flexible / organic</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Rigidity</th><td>Rigid</td><td>Flexible, bendable</td></tr>
+            <tr><th scope="row">Making it</th><td>High-temperature fabrication</td><td>Low-temperature, printable</td></tr>
+            <tr><th scope="row">Uses</th><td>Conventional electronics</td><td>Wearables, foldables, sensors</td></tr>
+            <tr><th scope="row">Durability</th><td>High, but rigid</td><td>Moderate; may need <strong>encapsulation</strong> (a protective coating)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Why it matters.</strong> These devices fit into daily life. Printable, flexible devices can use less material and less energy to make, which supports sustainability. They also open new markets: wearable healthcare devices, portable solar cells and foldable consumer electronics.</p>
+
+      <h2 id="spin-2d">Quantum-scale and spin-based materials: spintronics and 2D</h2>
+      <p>Traditional electronics store and process information using the <strong>charge</strong> of electrons. <strong>Spintronics</strong> also uses the electron's <strong>spin</strong>. <strong>2D materials</strong>, such as graphene and MoS₂, are ultra-thin layers only a few atoms thick. They conduct well, bend, and use little energy. Together, they can make devices that are faster, smaller and more energy efficient.</p>
+
+      <h3>Spintronics</h3>
+      <p>Electrons have a property called <strong>spin</strong>, which can be "up" or "down". You can think of it as a tiny arrow pointing one way or the other. Spin can stand for information, just as 0 and 1 do in traditional electronics. Devices that use spin need less energy and can keep their information even when the power is off. This is called <strong>non-volatile</strong> memory.</p>
+      <figure>
+        <img src="images/electron-spin.png" width="300" height="195" alt="Two electrons drawn as spheres, each with a magnetic arrow. In one the arrow points up, in the other it points down, showing the two spin directions.">
+        <figcaption>An electron's spin can point up or down.</figcaption>
+      </figure>
+      <p class="watch">Watch: <a href="https://www.youtube.com/watch?v=q3-S5hM-3QY" target="_blank" rel="noopener">What is spintronics and how is it useful?</a> (YouTube)</p>
+
+      <h4>Applications</h4>
+      <ul>
+        <li><strong>MRAM</strong> (Magnetoresistive Random Access Memory): fast, energy-efficient memory. It is on sale now, but only in niche uses.</li>
+        <li><strong>Spin-based logic devices:</strong> could allow low-power computing. Mostly experimental so far.</li>
+        <li><strong>Sensors:</strong> magnetic sensors in hard drives, cars and medical imaging. Widely used already.</li>
+      </ul>
+      <figure>
+        <img src="images/mram-structure.jpeg" width="500" height="277" alt="Diagram of an MRAM memory cell. On the left, a magnetic tunnel junction made of a free layer, a barrier layer and a fixed layer, where the free layer's arrow direction stands for 0 or 1. On the right, the same junction placed in a memory cell with a bitline and an access transistor.">
+        <figcaption>An MRAM memory cell stores 0 or 1 in the direction of a magnetic layer.</figcaption>
+      </figure>
+
+      <h4>Advantages and limits</h4>
+      <ul>
+        <li>Uses less energy than traditional devices.</li>
+        <li>Can combine memory and logic in one device, which speeds up computing.</li>
+        <li>Non-volatile, so it keeps data without power and wastes less energy.</li>
+        <li><strong>Limits:</strong> complex manufacturing, and still at an early research stage for large-scale commercial use.</li>
+      </ul>
+
+      <h3>2D materials</h3>
+      <dl>
+        <dt>Graphene</dt>
+        <dd>A single layer of carbon atoms arranged in a honeycomb (hexagon) pattern. It is an outstanding conductor of electricity, very strong and flexible. Possible uses: high-speed transistors, flexible electronics and sensors.</dd>
+        <dt>Transition metal dichalcogenides (TMDs), for example MoS₂</dt>
+        <dd>Semiconducting 2D materials with a <strong>bandgap</strong>, which is what lets them switch on and off. That makes them suitable for transistors. They are ultra-thin and light, and can be stacked into multi-layer devices.</dd>
+        <dt>Other 2D materials</dt>
+        <dd>Examples: h-BN (an insulator) and phosphorene (a semiconductor). Different layers can be combined into <strong>heterostructures</strong>, stacks with tailored properties.</dd>
+      </dl>
+      <figure>
+        <img src="images/graphene-family.png" width="774" height="581" alt="Diagram of graphene and related carbon materials around a central box. Shown are graphene, graphite, reduced graphene oxide, a carbon nanotube (rolled-up graphene), fullerene (a hollow ball of carbon) and graphene oxide.">
+        <figcaption>Graphene and its relatives, all built from carbon.</figcaption>
+      </figure>
+      <p class="watch">Watch: <a href="https://www.youtube.com/watch?v=uk2IeiSgPPI" target="_blank" rel="noopener">Graphene: A Double-Edged Sword</a> (3 minutes, YouTube)</p>
+
+      <h4>Applications</h4>
+      <ul>
+        <li><strong>High-performance transistors and circuits:</strong> mostly experimental, with research prototypes showing promise.</li>
+        <li><strong>Flexible, wearable, ultra-thin sensors:</strong> some early products and research prototypes.</li>
+        <li><strong>Energy-efficient photodetectors and solar cells:</strong> still emerging, with limited commercial use so far, mainly in research and specialized devices.</li>
+      </ul>
+      <figure>
+        <img src="images/graphene-wearable-sensors.jpeg" width="1055" height="560" alt="Collage of graphene-based wearable sensors. On the left, a body figure marks where sensors can detect pulse, breathing, heartbeat, facial expressions and movements of the head, throat, wrist, fingers, arm, leg and foot. On the right, four uses: human-machine interfaces, soft robotics, entertainment and virtual reality, and health monitoring.">
+        <figcaption>What graphene-based wearable sensors can detect and where they can be used.</figcaption>
+      </figure>
+
+      <h3>How do they compare with silicon?</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Comparison table: silicon versus spintronics and 2D materials">
+        <table>
+          <thead><tr><th scope="col">Feature</th><th scope="col">Silicon</th><th scope="col">Spintronics / 2D materials</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">How it works</th><td>Electron charge</td><td>Electron spin and/or ultra-thin 2D layers</td></tr>
+            <tr><th scope="row">Power efficiency</th><td>Moderate</td><td>Very low power for memory and logic</td></tr>
+            <tr><th scope="row">Device size</th><td>Limited by how far it can shrink</td><td>Atomic-level thickness possible</td></tr>
+            <tr><th scope="row">Uses</th><td>Conventional electronics</td><td>Non-volatile memory, flexible electronics, sensors</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Why it matters.</strong> Spintronics and 2D materials allow smaller, faster, more energy-efficient devices that draw less power. Ultra-thin, flexible 2D materials can use less material and support greener manufacturing. They matter for next-generation computing, wearables and green technology.</p>
+
+      <h2 id="ai">AI and semiconductors</h2>
+      <p>Artificial intelligence (AI) and chips help each other. AI programs need chips that are faster and use less energy. And AI is used to improve how chips are designed, made and tested. This loop speeds up innovation and drives specialized devices that go beyond traditional silicon.</p>
+
+      <h3>Three kinds of AI-driven chips</h3>
+      <h4>1. AI accelerators</h4>
+      <p>Specialized chips built to run AI work efficiently. Examples: <strong>GPUs</strong> (graphics processing units), <strong>TPUs</strong> (tensor processing units) and custom AI accelerators. They do many calculations in parallel (at the same time), handle neural-network work at high speed, and use less energy. <em>Status:</em> widely used in cloud computing, data centers and high-performance AI.</p>
+      <h4>2. Neuromorphic AI chips</h4>
+      <p>Brain-inspired chips with artificial neurons and synapses. Intel Loihi and IBM TrueNorth learn and make decisions locally, using very little power. They are energy efficient for edge AI and can adapt in real time. <em>Status:</em> commercial prototypes exist, mainly for research and specialized AI.</p>
+      <h4>3. Edge AI devices</h4>
+      <p>AI that runs directly on a device such as a smartphone, a smart gadget (IoT) or a wearable. This sends less data to the cloud, responds faster and improves privacy. <em>Status:</em> increasingly common in consumer electronics and industrial sensors.</p>
+
+      <h3>Materials and hardware</h3>
+      <ul>
+        <li><strong>Semiconductors:</strong> silicon is still dominant. Specialized AI chips also use GaAs, SiC (silicon carbide) or advanced <strong>FinFET</strong> designs (a three-dimensional transistor shape).</li>
+        <li><strong>Neuromorphic devices:</strong> oxides, phase-change materials and memristors, to copy how synapses work.</li>
+        <li><strong>AI accelerators:</strong> standard <strong>CMOS</strong> (the common chip-making technology) for GPUs and TPUs, with research into low-power designs made for AI.</li>
+        <li><strong>Flexible AI hardware:</strong> organic and 2D materials may allow AI on wearable or bendable devices.</li>
+      </ul>
+
+      <h3>Where AI chips are used</h3>
+      <ul>
+        <li><strong>Data centers and cloud AI:</strong> accelerators use less energy per calculation when training large neural networks.</li>
+        <li><strong>Consumer electronics:</strong> smartphones, smart cameras and personal assistants use AI chips for vision, speech and gesture recognition.</li>
+        <li><strong>Industrial automation:</strong> robots, self-driving vehicles and smart factories use AI-driven sensors and processors.</li>
+        <li><strong>Healthcare and wearables:</strong> AI chips analyze body data in real time.</li>
+      </ul>
+
+      <h3>Advantages and challenges</h3>
+      <p><strong>Advantages:</strong> energy-efficient computing and lower running costs; faster decisions through local processing at the edge; self-learning systems and predictive analytics; and support for next-generation devices such as neuromorphic processors and adaptive sensors.</p>
+      <p><strong>Challenges:</strong> advanced AI hardware can be costly and complex to make. Many neuromorphic and edge AI devices are still early in commercialization. Managing heat and power is critical in high-performance AI chips. New chip materials, such as 2D layers and phase-change materials, may need careful handling.</p>
+
+      <h3>Industry and sustainability</h3>
+      <ul>
+        <li><strong>Careers:</strong> AI hardware, microelectronics and semiconductor manufacturing. Understanding AI-enabled chips helps you follow trends in computing, edge devices and smart sensors.</li>
+        <li><strong>Less energy in big computing:</strong> AI accelerators reduce energy use in tasks such as data centers.</li>
+        <li><strong>Less waste in factories:</strong> AI-driven manufacturing and yield optimization (getting more good chips from each batch) reduce waste and energy use in chip factories ("fabs").</li>
+        <li><strong>Less data travel:</strong> edge AI relies less on the cloud, cutting the energy used to send data.</li>
+        <li><strong>Greener wearables:</strong> AI-compatible flexible electronics support low-resource, wearable and environmentally friendly uses.</li>
+      </ul>
+
+      <h2 id="summary">Summary</h2>
+      <ul>
+        <li>Traditional silicon devices are powerful but limited in speed, flexibility and energy efficiency.</li>
+        <li>Emerging technology includes quantum devices, neuromorphic devices, flexible/organic electronics, spintronics and 2D materials.</li>
+        <li>These technologies offer new uses, better performance and sustainability benefits.</li>
+        <li>Understanding them prepares you to engage with next-generation electronics in industry and research.</li>
+      </ul>
+
+      <div class="table-wrap table-wide" tabindex="0" role="region" aria-label="Comparison table of all five technologies against traditional silicon">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Feature</th>
+              <th scope="col">Traditional silicon</th>
+              <th scope="col">Quantum devices</th>
+              <th scope="col">Neuromorphic devices</th>
+              <th scope="col">Flexible / organic electronics</th>
+              <th scope="col">Spintronics / 2D materials</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Information unit</th><td>Bit (0 or 1)</td><td>Qubit (0, 1, superposition)</td><td>Artificial neuron/synapse</td><td>Bit (0 or 1)</td><td>Electron charge + spin</td></tr>
+            <tr><th scope="row">Form</th><td>Rigid</td><td>Conventional or lab setups</td><td>Can be built into chips</td><td>Flexible, bendable, printable</td><td>Ultra-thin, flexible layers</td></tr>
+            <tr><th scope="row">Energy efficiency</th><td>Moderate</td><td>High potential for specific tasks</td><td>Very high for AI / edge computing</td><td>Moderate to high</td><td>Very high, non-volatile memory</td></tr>
+            <tr><th scope="row">Key uses</th><td>General computing</td><td>Quantum simulations, cryptography</td><td>AI, pattern recognition, smart sensors</td><td>Wearables, foldable displays, flexible sensors</td><td>MRAM, high-speed transistors, advanced sensors</td></tr>
+            <tr><th scope="row">Advantages</th><td>Mature, reliable, scalable</td><td>Potential for extremely fast computation</td><td>Energy-efficient learning and adaptation</td><td>Flexible, portable, low material use</td><td>Non-volatile, ultra-thin, fast, energy efficient</td></tr>
+            <tr><th scope="row">Limits</th><td>Power use, hard to shrink further</td><td>Experimental, costly, complex</td><td>Early stage, complex to make</td><td>Slower, shorter lifespan, sensitive to moisture</td><td>Hard to make, early commercialization</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>E341 Electronic and Semiconductor Materials · Unit 2</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

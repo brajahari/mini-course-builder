@@ -5,9 +5,10 @@
 - No frameworks, no build step. Files open directly in a browser.
 
 ## Project Structure
-The repository is nearly empty for now. Files will live at the top level
-until the project grows; update this section as folders are added.
-
+- `index.html`: the whole course, one long scrolling page
+- `styles.css`: layout, light/dark colors, responsive rules
+- `script.js`: theme toggle and reading-progress bar
+- `images/`: pictures used in the course
 - `CLAUDE.md`: these instructions
 
 ## Key Requirements
